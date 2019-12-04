@@ -128,7 +128,7 @@ class CurrencyRate(models.Model):
                 CurrencyRate.objects.filter(
                     currency__code=currency_code
                 ).select_related('currency').first() for currency_code in pair
-            ]}
+            ] if el is not None}
             logger.warning(f'better do not use sqlite because twice more queries')
         else:
             currencies_data = {el.currency.code: el for el in CurrencyRate.objects.filter(

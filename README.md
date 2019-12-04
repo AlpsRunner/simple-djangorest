@@ -1,4 +1,4 @@
-# simple_djangorest
+# simple-djangorest
 simple project to learn how to implement REST API using Django
 
 
@@ -10,10 +10,10 @@ simple project to learn how to implement REST API using Django
 * Redis 4.0.9
 
 
-# How to install:
+# How to install on Ubuntu system:
 ```
-  git clone https://github.com/AlpsRunner/simple_djangorest.git
-  cd simple_djangorest
+  git clone https://github.com/AlpsRunner/simple-djangorest.git
+  cd simple-djangorest
   
   pip3 install -r requirements.txt
 
@@ -88,3 +88,7 @@ simple project to learn how to implement REST API using Django
             }
   
 ```
+
+# Technical Details:
+
+No API authentication and APP-ID generation implemented yet
