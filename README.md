@@ -17,9 +17,15 @@ simple project to learn how to implement REST API using Django
   
   pip3 install -r requirements.txt
 
-  export EXCHANGERATES_API_APP_ID='<your APP ID>'
-  export EXCHANGERATES_DB_USER='<your DB user name>'
-  export EXCHANGERATES_DB_PASS='<your DB user pass>'
+  Register and get <your APP ID> at Open Exchange Rates API. For FREE plan:
+      https://openexchangerates.org/signup/free
+
+  Export <your APP ID> to system environment:
+    export EXCHANGERATES_API_APP_ID='<your APP ID>'
+  
+  If you will use PostgreSQL export <your DB user name> and <your DB user pass> too:
+    export EXCHANGERATES_DB_USER='<your DB user name>'
+    export EXCHANGERATES_DB_PASS='<your DB user pass>'
 
   python3 manage.py makemigrations
   python3 manage.py migrate
